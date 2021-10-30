@@ -1,0 +1,133 @@
+
+
+@import "partials/_typography"
+@import "partials/_topBar"
+@import "partials/_sideBar"
+@import "partials/_mainArea"
+@import "partials/_footer"
+
+
+html, body
+    width: auto !important
+    overflow-x: hidden !important
+
+a
+    font-family: "Open Sans"
+    font-weight: 300
+
+
+h1
+    font-size: 48px
+    font-family: "Open Sans"
+    font-weight: 300
+    color: $color1
+    line-height: 0.75
+    margin-bottom: 80px
+    
+    
+    
+.hSection1
+    margin: 150px auto 0px
+
+.hSection2,.hSection3,footer
+    margin: 100px auto 0px
+    
+                
+                
+                
+.hSection1, .hSection3
+    ul
+        text-align: center
+        li
+            display: inline-block
+            a
+                img
+                    transform: scale(1)
+                &:hover,&:focus
+                    background-color: transparent
+                    img
+                        transform: scale(1.2)
+                        transition: transform .4s ease-out
+
+                
+                
+                
+.hSection2
+    .subSec
+        text-align: center
+        div
+            margin: 0
+            padding: 0
+            background-color: #135941
+
+            .content
+                position: absolute
+                display: inline-block
+                top: 0
+                left: 0
+                width: 100%
+                height: 100% 
+                opacity: 0
+
+                span.title
+                    display: inline-block
+                    font-family: "Droid Sans"
+                    font-size: 24px
+                    color: white
+                    margin: 100px 0 10px
+                span.category
+                    display: block
+                    font-family: "Jura"
+                    font-weight: 500
+                    color: $color6
+                    font-size: 18px
+            
+
+            .project
+                height: 300px
+                display: block
+                background-repeat: no-repeat
+                background-size: cover
+
+            
+            .project1
+                background-image: url('../img/project1.jpg')
+            .project2
+                background-image: url('../img/project2.jpg')
+            .project3
+                background-image: url('../img/project3.jpg')
+            .project4
+                background-image: url('../img/project4.jpg')
+            .project5
+                background-image: url('../img/project5.jpg')
+            .project6
+                background-image: url('../img/project6.jpg')
+            .project7
+                background-image: url('../img/project7.jpg')
+            .project8
+                background-image: url('../img/project8.jpg')
+            .project9
+                background-image: url('../img/project9.jpg')
+        div:hover
+            .content
+                opacity: 1
+                transition: all .4s ease-out
+            .project
+                opacity: .3
+                transition: all .4s ease-out    
+     
+                
+                
+                
+@media (max-width: 992px)
+    .hSection1
+        margin: 70px auto 0px
+    .hSection2,.hSection3,footer
+        margin: 50px auto 0px
+        
+        
+@media (max-width: 767px)
+    .hSection1
+        margin: 120px auto 0px
+    .hSection2,.hSection3,footer
+        margin: 100px auto 0px

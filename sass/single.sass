@@ -1,0 +1,90 @@
+
+@import "partials/_typography"
+@import "partials/_topBar"
+@import "partials/_sideBar"
+@import "partials/_mainArea"
+@import "partials/_footer"
+@import "partials/_readInfo"
+
+
+
+html, body
+    width: auto !important
+    overflow-x: hidden !important
+
+    
+a
+    font-family: "Open Sans"
+    font-weight: 300
+
+
+h1
+    font-size: 36px
+    font-family: "Open Sans"
+    font-weight: 300
+    color: $color1
+    line-height: 2.333
+
+    
+    
+    
+.sSection2, .section6, footer
+    margin: 100px auto 0px
+    
+.sSection1
+    margin: 150px auto 0px
+    .subSec
+        img
+            width: 100%
+            
+            
+.sSection2
+    .subSec
+        .mainText
+            float: left
+            display: inline-block
+        .mainPhoto
+            float: left
+            display: inline-block
+            margin-right: 30px
+        
+        span
+            font-size: 12px
+            font-family: "Lato"
+            color: $color11
+            line-height: 7
+            margin: 0 20px 0 10px
+
+
+        p
+            font-size: 20px
+            font-family: "Lato"
+            font-weight: 300
+            color: $color1
+            line-height: 1.8
+
+            
+            
+@media (max-width: 992px)
+    
+    .sSection1
+        margin: 100px auto 0px
+
+        
+
+        
+        
+@media (max-width: 767px)
+    
+    .container
+        padding: 0
+    
+    .sSection1
+        margin: 150px auto 0px
+
+    
+    .sSection2
+        .subSec
+            .mainPhoto
+                width: 100%
+                

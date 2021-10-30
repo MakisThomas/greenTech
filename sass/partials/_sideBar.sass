@@ -1,0 +1,47 @@
+.fixedSideBar
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 7%
+    height: 100%
+    height: 100%
+    background-color: white
+    box-shadow: 2px 0 10px 0px rgba($color18, 0.75)
+    z-index: 999
+    .nav
+        padding: 0
+        text-align: center
+        li
+            border-bottom: 1px solid $color14
+            text-align: center
+            a
+                text-align: center
+                font-size: 1.6em
+                color: #28b082
+                &:hover
+                    background-color: $color3
+                    color: white
+                    transition: all .3s ease-out
+        li.active
+            a
+                background-color: $color3
+                color: white
+                
+                
+                
+                
+                
+@media (max-width: 992px)
+    
+    .fixedSideBar
+        display: inherit
+        
+        
+        
+        
+        
+@media (max-width: 767px)
+    
+    .fixedSideBar
+        display: none

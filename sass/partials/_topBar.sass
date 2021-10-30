@@ -1,0 +1,114 @@
+@import "typography"
+@import "colors"
+                
+
+nav.navbar
+    background-color: white
+
+    .navbar-brand
+        padding: 5px 0
+    .navbar-nav
+        margin-bottom: 0px
+        li
+            margin: 0px 10px
+            .divider
+                margin-top: 15px
+                width: 100%
+                height: 5px
+                background-color: $color3
+                display: none
+                
+            a
+                font-size: 20px
+                color: $color1
+                line-height: 2.333
+                padding: 20px 20px 10px
+
+            
+                &:hover:not(.search)
+                    background-color: $color3
+                    color: white !important
+                    transition: all .3s ease-out
+            
+        li.active
+            a, a:hover, a:focus 
+                background-color: $color3
+                color: white !important
+            .divider
+                display: block
+            
+                
+                
+                
+                
+@media (max-width: 992px)
+    
+    .fixedSideBar
+        display: inherit
+    
+    nav.navbar
+        display: none
+    
+    
+    
+    
+    
+    
+//    nav.navbar
+        .navbar-header
+            width: 30%
+        .navbar-brand
+            margin: 15px auto
+            img
+                width: 100%
+        .navbar-nav
+            li
+                margin: 0 
+                a
+                    font-size: 17px
+                .divider
+                    margin-top: 15px
+                    
+                    
+                    
+                    
+                    
+@media (max-width: 767px)
+    
+    .fixedSideBar
+        display: none
+    
+    nav.navbar
+        display: block
+        .navbar-header
+            width: 100%
+            .navbar-brand
+                padding: 15px
+            img
+                width: 60%
+                
+            .navbar-toggle
+                margin: 20px
+                border: 1px solid #28b082
+                span
+                    background-color: #28b082
+                    
+                &:hover, &:focus
+                    background-color: #28b082
+                    border: 1px solid white
+                    span
+                        background-color: white
+        .navbar-nav
+            li.active
+                .divider
+                    display: none
+                    
+                    
+                    
+                    
+@media (max-width: 480px)
+    
+    nav.navbar .navbar-brand
+        width: 50%
+        img
+            width: 80%

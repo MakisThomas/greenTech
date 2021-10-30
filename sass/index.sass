@@ -1,0 +1,428 @@
+@import "partials/_typography"
+@import "partials/_colors"
+@import "partials/_topBar"
+@import "partials/_sideBar"
+@import "partials/_mainArea"
+@import "partials/_footer"
+@import "partials/_graph"
+@import "partials/_readInfo"
+@import "partials/_aboutSection"
+
+html, body
+    width: auto !important
+    overflow-x: hidden !important
+
+    
+a
+    font-family: "Open Sans"
+    font-weight: 300
+
+
+h1
+    font-size: 48px
+    font-family: "Open Sans"
+    font-weight: 300
+    color: $color1
+    line-height: 0.75
+    margin-bottom: 80px
+  
+
+
+    
+.section1,.section2,.section3,.section4,.section5,.section6, footer
+    margin: 150px auto 0px
+
+    
+
+
+.carousel
+    margin-top: 97px
+    .carousel-indicators 
+        position: relative
+        margin: 0
+        padding: 0
+        bottom: auto
+        left: auto
+        width: 100%
+        margin-top: -30px
+        li
+            border-radius: 0px
+            border: 3px solid $color2
+            background-color: $color2
+        li.active
+            width: 8px
+            height: 8px
+            margin: 2px
+            border: none
+            background-color: white
+            
+    .carousel-inner
+        .active
+            width: 100%
+            height: 100%
+        .item
+            width: 100%
+            height: 100%
+            .carousel-caption
+                div
+                    margin-bottom: 20px
+                    padding: 5px 15px
+                    background-color: rgba($color3, 0.702)
+                    border-top-left-radius: 10px
+                    border-top-right-radius: 10px
+                    p
+                        font-size: 22px 
+                        font-family: "Lato" 
+                        color: white 
+                        margin-bottom: 0px
+
+            img
+                display: block
+                height: auto
+                max-width: 100%
+                line-height: 1
+                width: 100%
+                height: 100%
+
+                
+.mainTitle
+    margin: 150px auto 0px
+    text-align: center
+    p.heroMsg
+        font-size: 38px 
+        font-family: "Open Sans" 
+        font-weight: 300
+        color: $color4 
+        line-height: 1.579 
+        transform: scale(0)
+        -webkit-transform: scale(0)
+        
+        
+                            
+           
+.section2
+    .subSec
+        text-align: center
+        div
+            margin: 0
+            padding: 0
+            background-color: $color5
+            .content
+                position: absolute
+                display: inline-block
+                top: 0
+                left: 0
+                width: 100%
+                height: 100% 
+                opacity: 0
+
+                span.title
+                    display: inline-block
+                    font-family: "Droid Sans"
+                    font-size: 24px
+                    color: white
+                    margin: 100px 0 10px
+                span.category
+                    display: block
+                    font-family: "Jura"
+                    font-weight: 500
+                    color: $color6
+                    font-size: 18px
+            
+
+            .project
+                height: 300px
+                display: block
+                background-repeat: no-repeat
+                background-size: cover
+
+            
+            .project1
+                background-image: url('../img/project1.jpg')
+            .project2
+                background-image: url('../img/project2.jpg')
+            .project3
+                background-image: url('../img/project3.jpg')
+            .project4
+                background-image: url('../img/project4.jpg')
+            .project5
+                background-image: url('../img/project5.jpg')
+            .project6
+                background-image: url('../img/project6.jpg')
+            .project7
+                background-image: url('../img/project7.jpg')
+            .project8
+                background-image: url('../img/project8.jpg')
+            
+            &:hover
+                .content
+                    opacity: 1
+                    text-decoration: none
+                    transition: all .4s ease-out
+                .project
+                    opacity: .3
+                    transition: all .4s ease-out
+
+
+
+.section3
+    .subSec
+        text-align: center
+        .package
+            display: block
+            border: 1px solid $color3
+            border-radius: 28px
+            margin: 40px auto
+            .title
+                background-color: $color3
+                border-top-left-radius: 26px
+                border-top-right-radius: 26px
+                p
+                    font-size: 20px
+                    font-family: "Lato"
+                    font-weight: 300
+                    color: $color6
+                    line-height: 1.8
+                    -moz-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+                    -webkit-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+                    -ms-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+
+                h1
+                    display: inline-block
+                    margin: 30px 0px
+                    font-size: 72px
+                    font-family: "Open Sans"
+                    color: white
+                    line-height: 0.5
+                    -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                    -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                    -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                    span
+                        font-size: 22px
+            .content
+                ul
+                    li
+                        font-size: 22px
+                        font-family: "Open Sans"
+                        font-weight: 300
+                        color: $color3
+                        line-height: 1.636
+                        -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        span, a
+                            display: inline-block
+                            margin: 20px auto
+                        a
+                            border: 1px solid transparent
+                            border-radius: 0
+                            padding: 20px 
+                            background-color: $color3
+                            font-size: 30px
+                            font-family: "Lato"
+                            color: white
+                            line-height: 1.2
+                            -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            &:hover
+                                border: 1px solid $color3
+                                background-color: white
+                                color: $color3
+                                transition: all .3s ease-out
+
+
+                    li:not(:last-child)
+                        border-bottom: 1px dashed $color3
+
+        .defaultPackage
+            display: block
+            background-color: $color3
+            border-radius: 28px
+            padding: 10px
+            .frame
+                border: 2px solid white
+                border-radius: 28px
+                .title
+                    padding: 10px
+                    border-bottom: 2px solid white
+                    h1
+                        display: inline-block
+                        margin: 30px 0px
+                        font-size: 79px
+                        font-family: "Open Sans"
+                        color: white
+                        line-height: 0.5
+                        -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                        span
+                            font-size: 22px
+                    p
+                        font-size: 20px
+                        font-family: "Lato"
+                        font-weight: 300
+                        color: $color6
+                        line-height: 1.8
+                        -moz-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+                        -webkit-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+                        -ms-transform: matrix( 1.10732984293194,0,0,1.10573476702509,0,0)
+                .content
+                    padding: 20px
+                    ul
+                        li
+                            font-size: 22px
+                            font-family: "Open Sans"
+                            font-weight: 300
+                            color: white
+                            line-height: 1.636
+                            -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                            span, a
+                                display: inline-block
+                                margin: 20px auto
+                            a
+                                border: 1px solid transparent
+                                border-radius: 0
+                                padding: 20px 
+                                background-color: white
+                                font-size: 30px
+                                font-family: "Lato"
+                                color: $color3
+                                line-height: 1.2
+                                -moz-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                                -webkit-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                                -ms-transform: matrix( 0.93455497382199,0,0,0.93548387096774,0,0)
+                                &:hover
+                                    border: 1px solid white
+                                    background-color: $color3
+                                    color: white
+                                    transition: all .3s ease-out
+
+
+                    li:not(:last-child)
+                        border-bottom: 1px dashed white
+
+
+           
+.section4
+    background-image: url('../img/testimonialsBg.jpg')
+    background-position: right center
+    background-repeat: no-repeat
+    background-size: cover
+    .subSec
+        text-align: center
+        h1
+            margin: 100px auto 60px
+            color: $color7
+        .carousel 
+            margin-top: 0
+            margin-bottom: 60px
+            .carousel-inner .item 
+                img
+                    width: auto
+                    display: inline
+                div
+                    text-align: center
+                    p
+                        font-size: 30px
+                        font-family: "Josefin Sans"
+                        font-weight: 300
+                        font-style: italic
+                        color: $color8
+                        line-height: 1.467
+                        margin-bottom: 30px
+                    p.quotes
+                        font-size: 50px
+                        font-weight: bold
+                    .thumb
+                        margin-bottom: 60px
+
+            
+
+
+
+
+
+
+
+
+@media (max-width: 1200px)
+    .carousel .carousel-inner .item .carousel-caption div p
+        font-size: 16px
+    .section2 .subSec div 
+        .content
+            span.title
+                margin: 80px 0 10px
+        .project
+            height: 250px
+        
+
+    
+
+        
+        
+        
+        
+@media (max-width: 992px)
+
+   
+        
+    .section1,.section2,.section3,.section4,.section5,.section6, footer
+        margin: 100px auto 0px
+    
+
+    .mainTitle
+        p.heroMsg
+            font-size: 28px
+        
+                
+
+    .section2 .subSec div 
+        .content
+            span.title
+                margin: 120px 0 10px
+        .project
+            height: 300px
+
+    .section3
+        .subSec
+            .package, .defaultPackage
+                width: 70%
+                margin: 0 auto 40px
+                
+    .section4
+        .subSec
+            .carousel 
+                .carousel-inner .item 
+                    height: 460px 
+                
+                
+                
+                
+@media (max-width: 767px)
+    
+            
+            
+            
+    .container
+        width: 100%
+        
+    .carousel-caption
+        display: none
+                    
+                                    
+    .section2 .subSec div
+        .content
+            span.title
+                margin: 150px 0 10px
+        .project
+            height: 400px
+                    
+           
+    .section4
+        .subSec
+            .carousel 
+                .carousel-inner .item  p
+                    font-size: 20px !important

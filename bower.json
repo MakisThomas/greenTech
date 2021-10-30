@@ -1,0 +1,7 @@
+{
+  "name": "Green Tech",
+  "dependencies": {
+    "jquery.stellar": "stellar#~0.6.2",
+    "waypoints": "~4.0.0"
+  }
+}
